@@ -1,3 +1,5 @@
+
+console.log(Vue);
 const app = Vue.createApp({
     template:`
     <h1>Hola mundo</h1>
@@ -5,5 +7,6 @@ const app = Vue.createApp({
     `
 })
  
-app.mount('#myapp')
+app.mount('#myApp')
+
 
