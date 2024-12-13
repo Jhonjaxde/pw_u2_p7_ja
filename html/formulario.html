@@ -9,34 +9,47 @@
   </head>
 
   <body>
-    <div id="container">
-      <div id="myFormulario">
-        <h1>Formulario</h1>
-        <ul>
-          <label for="idNombre">Nombre</label>
-          <input v-model="nombre" id="idNombre" type="text" />
+    <header></header>
+    <nav></nav>
+    <section>
+      <div>
+        <div class="container">
+          <div class="myFormulario" id="idMyFormulario">
+            <h1>Formulario</h1>
 
-          <label for="idApellidor">Apellido</label>
+            <div>
+              <label for="idNombre">Nombre</label>
+              <input v-model="nombre" id="idNombre" type="text" />
+            </div>
+            <div>
+              <label for="idApellidor">Apellido</label>
+              <input v-model="apellido" id="idApellido" type="text" />
+            </div>
+            <div>
+              <label for="idHobby">Hobby</label>
+              <input v-model="hobby" id="idHobby" type="text" />
+            </div>
+            <div>
+              <label for="idFechaNac">FechaNac</label>
+              <input v-model="fechaNac" id="idFechaNac" type="text" />
+            </div>
 
-          <input
-            v-on:keypress.enter="eventoKeyPressModificador"
-            v-model="apellido"
-            id="idApellido"
-            type="text"
-          />
-          <label for="idHobby">Hobby</label>
-          <input v-model="hobby" id="idHobby" type="text" />
-        </ul>
-        <button v-on:click="agregarFrase">Agregar</button>
-        <button v-on:click="agregarFraseFinal">Agregar Final</button>
-        <hr />
-        <ul>
-          <li v-for="datos in listadatos">
-            {{datos.nombre}}, {{datos.apellido}},{{datos.hobby}}
-          </li>
-        </ul>
+            <div>
+              
+              <button v-on:click="guardarDatosFinal">Guardar Final</button>
+            </div>
+
+            <hr />
+            <ul>
+              <li v-for="datos in listadatos">
+                {{datos.nombre}},{{datos.apellido}},{{datos.hobby}},{{datos.fechaNac}}
+              </li>
+            </ul>
+          </div>
+          <script src="../js/formulario.js"></script>
+        </div>
       </div>
-      <script src="../js/formulario.js"></script>
-    </div>
+    </section>
+    <footer></footer>
   </body>
 </html>

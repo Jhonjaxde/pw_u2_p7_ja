@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myFormulario{
+   text-align: center;
+   font-family: Arial, sans-serif;
+   background-color: #f9f9f9;
+   padding: 50px 50px 50px 50px;
+   
+}
+
+#idNombre{
+    border: none; 
+    border-bottom: 2px solid;
+    background-color:#f9f9f9 ;
+    outline: none; 
+    margin: 5px;
+}
+#idApellido{
+    border: none; 
+    border-bottom: 2px solid;
+    background-color:#f9f9f9 ;
+    outline: none; 
+    margin: 5px;
+}
+#idHobby{
+    border: none; 
+    border-bottom: 2px solid;
+    background-color:#f9f9f9 ;
+    outline: none; 
+    margin: 5px;
+}
+#idFechaNac{
+    border: none; 
+    border-bottom: 2px solid;
+    background-color:#f9f9f9 ;
+    outline: none; 
+    margin: 5px;
+}
